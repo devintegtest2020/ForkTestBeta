@@ -63,7 +63,7 @@ public class FormatIntWithPercentD {
 
         if (exitValue != 0 || !isConfigured) {
             final String msg = String.format(
-                    "Process did not complete successfully. Exit value [%s]. stdout [%s]. stderr[%s].",
+                    "Process did not complete successfully. Exit value [%d]. stdout [%d]. stderr[%d].",
                     exitValue, stdoutSB.toString(), stderrSB.toString());
             throw new RuntimeException(msg);
         } else {
